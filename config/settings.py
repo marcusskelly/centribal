@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "src.articles",
     "src.orders",
+    "drf_spectacular",
 ]
 
 MIDDLEWARE = [
@@ -103,7 +104,15 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+REST_FRAMEWORK = {
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+}
 
+SPECTACULAR_SETTINGS = {
+    "TITLE": "Centribal",
+    "DESCRIPTION": "Technical test API for managing articles and orders",
+    "VERSION": "0.10.0",
+}
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
