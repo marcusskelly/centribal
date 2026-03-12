@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "src.articles",
-    "src.orders",
+    "src.articles.infrastructure.apps.ArticlesConfig",
+    "src.orders.infrastructure.apps.OrdersConfig",
     "drf_spectacular",
 ]
 

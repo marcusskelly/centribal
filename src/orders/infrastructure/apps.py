@@ -1,0 +1,7 @@
+
+from django.apps import AppConfig
+
+class OrdersConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'src.orders.infrastructure'  # apunta a donde están los modelos
+    label = "orders_app" 
